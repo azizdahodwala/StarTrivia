@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		2FB880F3279A4DE600762791 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB880F2279A4DE600762791 /* AppDelegate.swift */; };
 		2FB880F5279A4DE600762791 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB880F4279A4DE600762791 /* SceneDelegate.swift */; };
-		2FB880F7279A4DE600762791 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB880F6279A4DE600762791 /* ViewController.swift */; };
+		2FB880F7279A4DE600762791 /* SelectPersonVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FB880F6279A4DE600762791 /* SelectPersonVC.swift */; };
 		2FB880FA279A4DE600762791 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB880F8279A4DE600762791 /* Main.storyboard */; };
 		2FB880FC279A4DE700762791 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FB880FB279A4DE700762791 /* Assets.xcassets */; };
 		2FB880FF279A4DE700762791 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FB880FD279A4DE700762791 /* LaunchScreen.storyboard */; };
+		2FB88109279A510700762791 /* Starjhol.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FB88106279A510700762791 /* Starjhol.ttf */; };
+		2FB8810A279A510700762791 /* Starjout.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FB88107279A510700762791 /* Starjout.ttf */; };
+		2FB8810B279A510700762791 /* Starjedi.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2FB88108279A510700762791 /* Starjedi.ttf */; };
+		2FD30E6927DE50DC009DF20E /* blackBgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD30E6827DE50DC009DF20E /* blackBgView.swift */; };
+		2FD30E6C27DE51E1009DF20E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FD30E6B27DE51E1009DF20E /* Constants.swift */; };
+		2FDFE37827F27020004A20AC /* PersonApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FDFE37727F27020004A20AC /* PersonApi.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2FB880EF279A4DE600762791 /* StarTrivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StarTrivia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FB880F2279A4DE600762791 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2FB880F4279A4DE600762791 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		2FB880F6279A4DE600762791 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2FB880F6279A4DE600762791 /* SelectPersonVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectPersonVC.swift; sourceTree = "<group>"; };
 		2FB880F9279A4DE600762791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FB880FB279A4DE700762791 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FB880FE279A4DE700762791 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FB88100279A4DE700762791 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FB88106279A510700762791 /* Starjhol.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjhol.ttf; sourceTree = "<group>"; };
+		2FB88107279A510700762791 /* Starjout.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjout.ttf; sourceTree = "<group>"; };
+		2FB88108279A510700762791 /* Starjedi.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Starjedi.ttf; sourceTree = "<group>"; };
+		2FD30E6827DE50DC009DF20E /* blackBgView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = blackBgView.swift; sourceTree = "<group>"; };
+		2FD30E6B27DE51E1009DF20E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		2FDFE37727F27020004A20AC /* PersonApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonApi.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,77 @@
 		2FB880F1279A4DE600762791 /* StarTrivia */ = {
 			isa = PBXGroup;
 			children = (
+				2FB8810D279A517400762791 /* Model */,
+				2FB8810E279A517E00762791 /* View */,
+				2FB88110279A51AA00762791 /* Controller */,
 				2FB880F2279A4DE600762791 /* AppDelegate.swift */,
 				2FB880F4279A4DE600762791 /* SceneDelegate.swift */,
-				2FB880F6279A4DE600762791 /* ViewController.swift */,
+				2FB880F6279A4DE600762791 /* SelectPersonVC.swift */,
+				2FDFE37627F26FEB004A20AC /* Services */,
+				2FD30E6A27DE51C0009DF20E /* Utils */,
+				2FB8810C279A512E00762791 /* Resources */,
 				2FB880F8279A4DE600762791 /* Main.storyboard */,
 				2FB880FB279A4DE700762791 /* Assets.xcassets */,
 				2FB880FD279A4DE700762791 /* LaunchScreen.storyboard */,
 				2FB88100279A4DE700762791 /* Info.plist */,
 			);
 			path = StarTrivia;
+			sourceTree = "<group>";
+		};
+		2FB8810C279A512E00762791 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				2FB8810F279A51A000762791 /* Fonts */,
+				2FB88108279A510700762791 /* Starjedi.ttf */,
+				2FB88106279A510700762791 /* Starjhol.ttf */,
+				2FB88107279A510700762791 /* Starjout.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		2FB8810D279A517400762791 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2FB8810E279A517E00762791 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2FD30E6827DE50DC009DF20E /* blackBgView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2FB8810F279A51A000762791 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		2FB88110279A51AA00762791 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		2FD30E6A27DE51C0009DF20E /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2FD30E6B27DE51E1009DF20E /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2FDFE37627F26FEB004A20AC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2FDFE37727F27020004A20AC /* PersonApi.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +202,9 @@
 				2FB880FF279A4DE700762791 /* LaunchScreen.storyboard in Resources */,
 				2FB880FC279A4DE700762791 /* Assets.xcassets in Resources */,
 				2FB880FA279A4DE600762791 /* Main.storyboard in Resources */,
+				2FB8810A279A510700762791 /* Starjout.ttf in Resources */,
+				2FB8810B279A510700762791 /* Starjedi.ttf in Resources */,
+				2FB88109279A510700762791 /* Starjhol.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +215,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FB880F7279A4DE600762791 /* ViewController.swift in Sources */,
+				2FD30E6C27DE51E1009DF20E /* Constants.swift in Sources */,
+				2FDFE37827F27020004A20AC /* PersonApi.swift in Sources */,
+				2FB880F7279A4DE600762791 /* SelectPersonVC.swift in Sources */,
+				2FD30E6927DE50DC009DF20E /* blackBgView.swift in Sources */,
 				2FB880F3279A4DE600762791 /* AppDelegate.swift in Sources */,
 				2FB880F5279A4DE600762791 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,7 +382,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.StarTrivia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StarTriviaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -330,7 +410,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.StarTrivia;
+				PRODUCT_BUNDLE_IDENTIFIER = com.StarTriviaProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
